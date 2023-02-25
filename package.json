@@ -1,0 +1,26 @@
+{
+  "name": "hussein-serrurier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all -p dev:*",
+    "build": "run-s build:*",
+    "dev:11ty": "eleventy --serve",
+    "dev:css": "tailwindcss -i src/assets/css/tailwind.css -o dist/assets/css/tailwind.css --watch --postcss",
+    "build:css": "tailwindcss -i src/assets/css/tailwind.css -o src/_includes/css/critical.css --postcss --minify",
+    "build:11ty": "eleventy"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "autoprefixer": "^10.4.13",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4"
+  }
+}
