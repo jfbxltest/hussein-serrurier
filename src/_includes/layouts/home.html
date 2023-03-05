@@ -4,4 +4,11 @@
     <h1 class="text-3xl font-josefin">{{ title }}</h1>
     {{ content | safe }}
   </article>
+
+  {% block intro %}
+  {% endblock intro %}
+  <h2 class="text-xl font-jost">Zone d’intervention en Suisse</h2>
+  <p>{{ site.name }} est disponible pour tous vos besoins dans les villes suivantes :</p>
+  {% include "partials/services.html" %}
+
 {% endblock %}

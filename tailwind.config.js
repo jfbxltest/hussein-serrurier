@@ -7,6 +7,7 @@ module.exports = {
       jost: ['Jost', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
       josefin: ['"Josefin Sans"', 'sans-serif'],
+      icones: ['icomoon']
     },
     extend: {},
   },

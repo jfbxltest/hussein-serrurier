@@ -1,0 +1,21 @@
+{% set cls = cycler("bg-orange-500", "bg-slate-600") %}
+{% set origin = cycler("origin-top-right", "origin-top-left", "origin-top-left") %}
+
+<div class="md:grid grid-cols-3 text-white">
+
+  {% for service in collections.services %}
+  {% if page.url != service.url %}
+  <div class="m-4">
+    <a href="{{ service.url }}" class="{{cls.next()}} {{origin.next()}} p-6 table reveal reveal-scale">
+      <div class="font-icones table-cell text-3xl ">{{ service.data.icone }}</div>
+      <div class="table-cell pl-4 align-top">
+        <h3 class="text-lg mb-2 font-semibold">{{ service.data.title | upper }}</h3>
+        <p class="">{{ service.data.texte | safe }}</p>
+        <p class="text lg mt-4 font-semibold">EN SAVOIR PLUS</p>
+      </div>
+    </a>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
+

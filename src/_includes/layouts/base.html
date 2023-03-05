@@ -10,6 +10,7 @@
 
     <!-- version dev -->
     <link rel="stylesheet" href="/assets/css/tailwind.css">
+    <link rel="stylesheet" href="/assets/css/reveal.css">
     <!-- end version dev -->
     
   </head>
@@ -17,10 +18,13 @@
     {% include "partials/header.html" %}
     {% include "partials/navbar.html" %}
     {% include "partials/leading.html" %}
-    {% block content %}
-    <p>
-      Here is some placeholder content that will render if a template doesn’t define a block.
-    </p>
-    {% endblock %}
+    <div class="max-w-5xl mx-auto">
+      {% block content %}
+      <p>
+        Here is some placeholder content that will render if a template doesn’t define a block.
+      </p>
+      {% endblock %}
+    </div>
+    <script src="/assets/js/reveal.js"></script>
   </body>
 </html>

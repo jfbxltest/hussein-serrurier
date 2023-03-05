@@ -1,9 +1,14 @@
+
 .reveal {
-transition-property: opacity, transform;
-transition-duration: 1s;
+transition-property: opacity, transform, scale;
+transition-duration: 3s;
 transition-timing-function: cubic-bezier(.5,0,0,1);
 }
 .reveal-1{
   transform: translateX(30px);
   opacity: .2;
+}
+.reveal-scale {
+  scale: 0.1;
+  opacity: 0;
 }

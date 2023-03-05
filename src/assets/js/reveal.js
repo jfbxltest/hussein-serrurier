@@ -7,6 +7,8 @@ const options = {
 
 
 function handleIntersect(entries, observer) {
+
+  console.log('ok ***************** ')
   entries.forEach((entry) => {
     if (entry.intersectionRatio > ratio) {
       entry.target.classList.forEach(classe => {
@@ -21,4 +23,4 @@ function handleIntersect(entries, observer) {
 
 const observer = new IntersectionObserver(handleIntersect, options);
 
-document.querySelector('[class*="reveal-*]').forEach(target => observer.observe(target));
+document.querySelectorAll('.reveal').forEach(target => observer.observe(target));
