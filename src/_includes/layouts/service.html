@@ -1,12 +1,18 @@
 {% extends "layouts/base.html" %} 
+
+
+
 {% block content %}
   <article class="max-w-5xl mx-auto">
     <h1 class="text-3xl font-josefin">{{ title }}</h1>
-    {{- content | safe -}}
+    {{ content | safe }}
   </article>
 
-  {% block intro %}
-  {% endblock intro %}
+  <div class="bg-slate-500 py-4 px-8">
+    {% block intro %}
+    {% endblock intro %}
+  </div> 
+
   <h2 class="text-xl font-jost">Zone d’intervention en Suisse</h2>
   <p>{{ site.name }} est disponible pour tous vos besoins dans les villes suivantes :</p>
   {% include "partials/services.html" %}

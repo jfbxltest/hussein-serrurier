@@ -5,14 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>{{ title }}</title>
-
-    {# <!--version build  <style> {% include "css/critical.css" %} </style> --> #}
-
-    <!-- version dev -->
     <link rel="stylesheet" href="/assets/css/tailwind.css">
     <link rel="stylesheet" href="/assets/css/reveal.css">
-    <!-- end version dev -->
-    
   </head>
   <body>
     {% include "partials/header.html" %}
@@ -25,6 +19,7 @@
       </p>
       {% endblock %}
     </div>
+    {% include "partials/footer.html" %}
     <script src="/assets/js/reveal.js"></script>
   </body>
 </html>

@@ -1,64 +1,38 @@
 {% set navPages = collections.all | eleventyNavigation %}
 
-  
-
-<div class="sticky top-0 z-40 bg-white">
-<div class="relative top-0 max-w-5xl mx-auto py-2.5">
-  <ul class="flex justify-center text-[17px] font-semibold text-gray-600">
-  {%- for entry in navPages %}
-    <li class="px-4 mt-2  {% if entry.children.length %} group {% endif %} hover:text-gray-600">
-      <a  class="block pb-2 leading-[2em]" href="{{ entry.url }}">
-        <span class="mr-1">{{ entry.title | upper }}</span>
-        {% if entry.children.length %}
-          <svg class="fill-current h-4 w-4 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-          </svg>
-        {% endif %}
-      </a>
-      {% if entry.children.length %}
-        <div class="md:absolute md:hidden md:group-hover:grid md:grid-cols-4 -mt-px left-0 right-0 py-7 px-5 border-t-4 z-10 rounded bg-gray-100" >
-        {%- for child in entry.children %}
-          <a
-            class="block hover:bg-gray-400 py-1.5 px-5 font-bold font-josefin leading-[2em] w-48 border-b-2"
-            href="{{ child.url }}"
-          >
-          {{ child.title | upper }}
+<script>
+  const toggleNav = () => {
+    const navigationElem = document.getElementById('navigation')
+    navigationElem.classList.toggle('hidden')
+  }
+</script>
+<div class="md:hidden">
+  <button class="rounded text-white bg-slate-500  z-40 block mx-auto p-2 my-2" onclick="toggleNav()">Ok</button>
+</div>
+<div class="relative md:sticky top-0 z-40  md:bg-white hidden md:block" id="navigation">
+  <div class="absolute md:relative top-0 max-w-5xl left-1/2 -translate-x-1/2 p-4 md:py-2.5 bg-gray-100  md:bg-transparent">
+    <ul class="md:flex justify-center text-[17px] font-semibold text-gray-600">
+      {%- for entry in navPages %}
+      <li class="px-4 mt-2  {% if entry.children.length %} group {% endif %}">
+        <a class="block pb-2 leading-[2em]  hover:text-gray-400" href="{{ entry.url }}">
+          <span class="mr-1">{{ entry.title | upper }}</span>
+            {%- if entry.children.length %}
+            <svg class="fill-current h-4 w-4 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+            </svg>
+            {%- endif %}
         </a>
-        {%- endfor -%}
+        {%- if entry.children.length %}
+        <div class="md:absolute md:hidden md:group-hover:grid md:grid-cols-4 -mt-px left-0 right-0 py-7 px-5 border-t-4 z-10 rounded bg-gray-100" >
+          {%- for child in entry.children %}
+          <a class="block hover:text-gray-400 py-1.5 px-5 font-bold font-josefin leading-[2em] w-48 border-b-2" href="{{ child.url }}">
+            {{ child.title | upper }}
+          </a>
+          {%- endfor %}
         </div>
-      {% endif %}
-    </li>
-  {%- endfor -%}
-</ul>
+        {%- endif %}
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
 </div>
-</div>
- 
-
-
-{# {% macro renderNavListItem(entry) %}
-  {% if entry.children.length %}
-    <li class ="">
-      <details
-        {%- for child in entry.children %}
-          {% if child.parent == entry.title and child.url == page.url %}
-            class="is-active"
-            open
-          {% endif %}
-        {% endfor %}
-        >
-        <summary style="list-style: none;">{{ entry.title }}</summary>
-        <ul role="list">
-          {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
-        </ul>
-      </details>
-    </li>
-  {% else %}
-    <li class ="">
-      <a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page" {% endif %}>{{ entry.title }}</a>
-    </li>
-    {%- endif -%}
-{%- endmacro %}
-
-<ul class="nav-list flex" role="list">
-{%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
-</ul> #}
