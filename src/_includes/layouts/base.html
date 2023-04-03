@@ -12,13 +12,8 @@
     {% include "partials/header.html" %}
     {% include "partials/navbar.html" %}
     {% include "partials/leading.html" %}
-    <div class="max-w-5xl mx-auto">
-      {% block content %}
-      <p>
-        Here is some placeholder content that will render if a template doesn’t define a block.
-      </p>
-      {% endblock %}
-    </div>
+    {% block content %}
+    {% endblock %}
     {% include "partials/footer.html" %}
     <script src="/assets/js/reveal.js"></script>
   </body>

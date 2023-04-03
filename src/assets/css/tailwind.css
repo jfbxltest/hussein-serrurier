@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
 
-@font-face{font-family:icomoon;
-  src:url(/assets/fonts/icomoon.eot);
-  src:url(/assets/fonts/icomoon.eot?#iefix) format("embedded-opentype"),
-  url(/assets/fonts/icomoon.woff) format("woff"),
-  url(/assets/fonts/icomoon.ttf) format("truetype"),
-  url(/assets/fonts/icomoon.svg) format("svg");font-weight:400;font-style:normal}
+@font-face {
+  font-family: icomoon;
+  src: url(/assets/fonts/icomoon.eot);
+  src: url(/assets/fonts/icomoon.eot?#iefix) format("embedded-opentype"),
+    url(/assets/fonts/icomoon.woff) format("woff"),
+    url(/assets/fonts/icomoon.ttf) format("truetype"),
+    url(/assets/fonts/icomoon.svg) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
 
 @tailwind base;
 @tailwind components;
@@ -14,9 +18,61 @@
 
 @layer components {
   .btn-primary {
-    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md ;
+    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md;
     &:hover {
       @apply bg-blue-200 text-gray-500;
     }
+  }
+  .page {
+    h2 {
+      @apply pb-3 text-3xl font-josefin font-bold text-neutral-600;
+    }
+    p {
+      @apply pb-4 text-lg font-medium leading-8 text-neutral-600;
+    }
+    ul {
+      @apply md:grid-cols-3 md:grid gap-4 font-josefin italic leading-8 font-medium mt-8;
+    }
+    li {
+      position: relative;
+      padding-left: 50px;
+      &:before {
+        font-family: "icomoon";
+        content: "y";
+        position: absolute;
+        font-style: normal;
+        left: 0;
+        font-size: 30px;
+        color: #bdad9b;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .blue-section {
+    background-color: #edeff4;
+    position: relative;
+
+    &:after,
+    &:before {
+      content: "";
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNlZGVmZjQiPjxwYXRoIGQ9Ik0wIDQ3LjQ0TDE3MCAwbDYyNi40OCA5NC44OUwxMTEwIDg3LjExbDE3MC0zOS42N1YxNDBIMFY0Ny40NHoiIGZpbGwtb3BhY2l0eT0iLjUiLz48cGF0aCBkPSJNMCA5MC43MmwxNDAtMjguMjggMzE1LjUyIDI0LjE0TDc5Ni40OCA2NS44IDExNDAgMTA0Ljg5bDE0MC0xNC4xN1YxNDBIMFY5MC43MnoiLz48L2c+PC9zdmc+);
+      background-size: 100% 100px;
+      height: 100px;
+      background-color: white;
+      z-index: 1;
+      display: block;
+      height: 100px;
+    }
+    &:after {
+      transform: scale(1, -1);
+      bottom: 0;
+    }
+    &:before {
+      top: 0;
+    }
+  }
+  .intro {
+    @apply container md:flex md:space-x-8 md:[&>h2]:basis-1/3 md:[&>h2]:shrink-0;
   }
 }

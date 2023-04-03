@@ -10,7 +10,7 @@ r: renforcement de porte d'entrée
 g: garage
 k: clé Ksée (cassée)
 
-v: icon check = Valid
+y: icon check = Valid
 
 q: quote white
 Q: quote black

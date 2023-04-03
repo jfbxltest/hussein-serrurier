@@ -2,8 +2,10 @@
 eleventyNavigation:
   key: Serrurier
   order: 0
-title: 'Home'
-layout: 'layouts/home.html'
+eleventyComputed:
+  title: "{{ site.name | title }}"
+subtitle: "Proche de chez vous en urgence ou sur rendez-vous"
+layout: "layouts/home.html"
 permalink: "/index.html"
 ---
 
@@ -12,6 +14,3 @@ Quibusdam ipsum quasi quam consectetur voluptatibus aliquam neque, blanditiis qu
 Veritatis molestiae quaerat consequatur labore a quidem quod cumque reiciendis voluptatum dolores dignissimos consectetur aliquam quos facere modi, optio expedita sunt tempore earum beatae magnam? Optio similique voluptas a voluptatem!
 Odit sed, voluptas velit nobis ad, eum laboriosam atque voluptate illum, dolor accusamus fugit consequatur maiores? Quis obcaecati impedit accusantium a? Nam quia aut animi. Ab cupiditate aliquam doloremque animi.
 Illum beatae tenetur vitae obcaecati laborum cum, recusandae minima assumenda saepe culpa. Perspiciatis aliquid laboriosam omnis velit vero quaerat labore explicabo eveniet! Provident nesciunt blanditiis molestiae placeat dolor magnam! Doloribus.
-
-
-

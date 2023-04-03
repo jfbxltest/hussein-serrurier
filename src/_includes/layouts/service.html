@@ -1,20 +1,9 @@
-{% extends "layouts/base.html" %} 
-
-
-
+{% extends "layouts/base.html" %}
 {% block content %}
-  <article class="max-w-5xl mx-auto">
-    <h1 class="text-3xl font-josefin">{{ title }}</h1>
-    {{ content | safe }}
-  </article>
-
-  <div class="bg-slate-500 py-4 px-8">
-    {% block intro %}
-    {% endblock intro %}
-  </div> 
-
-  <h2 class="text-xl font-jost">Zone d’intervention en Suisse</h2>
-  <p>{{ site.name }} est disponible pour tous vos besoins dans les villes suivantes :</p>
-  {% include "partials/services.html" %}
-
+	<!-- begin service layout-->
+	<div class="page mt-28">
+		{{ content | safe}}
+	</div>
+	{% include "partials/services.html" %}
+	<!-- end service layout -->
 {% endblock %}
