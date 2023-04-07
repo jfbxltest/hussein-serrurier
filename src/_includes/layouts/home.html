@@ -1,17 +1,33 @@
 {% extends "layouts/base.html" %}
-
 {% block content %}
-	<article class="container">
-		<h1 class="text-3xl font-josefin">{{ title }}</h1>
-		{{- content | safe -}}
-	</article>
-
-	{% block intro %}{% endblock intro %}
-	<h2 class="text-xl font-jost">Zone d’intervention en Suisse</h2>
-	<p>{{ site.name }}
-		est disponible pour tous vos besoins dans les villes suivantes :</p>
-	{% include "partials/services.html" %}
-	<div class="blue-section">
-		ok
+	<div class="container page">
+		<p>Clés perdues ou oubliées ? Serrure bloquée ? Le verrou est cassé? Porte à remplacer ? Face à de tels tracas, il est toujours utile d’avoir sous la main le
+			<strong>numéro de téléphone d’un serrurier</strong>
+			ou son l’adresse. Oui, mais dans l’urgence ou la panique, votre choix hâtif d’un serrurier peut avoir des conséquences fâcheuses : travaux incomplets, remplacements inutiles, pièces coûteuses, rajouts salés, etc. C’est pourquoi
+			<strong>{{ site.name }}</strong>
+			vous propose  un service de qualité à des prix justes et transparents. Le meilleur serrurier près de chez vous : distance, prix, rapport qualité/prix, devis gratuits, catalogues, avis… ."
+		</p>
+		<h2 class="my-8">Zone d'intervention</h2>
+		<p class="mb-8">{{ site.name | title }}
+			est disponible pour tous vos besoins dans les communes suivantes :</p>
+		<ul class="grid grid-cols-2 md:grid-cols-4 text-primary font-medium text-lg mb-16">
+			{% for commune in site.communes %}
+				<li class="mb-6">{{ commune}}</li>
+			{% endfor %}
+		</ul>
 	</div>
+	<div class="md:flex mb-16">
+		<div class="p-32 space-y-4 w-1/2">
+			<h3 class="text-3xl text-gray-500">RÉPARATION OU REMPLACEMENT</h3>
+			<h2 class="text-3xl">Les services de nos serruriers</h2>
+			<p>Installation, réparation, entretien et services d’urgence de déverrouillage de serrures à domicile efficaces et performants. Nous accordons une grande importance à la sécurité et à la sûreté de votre maison, et nous en faisons toujours notre priorité absolue.</p>
+		</div>
+		{% image "src/assets/images/mid-home.jpg",  "service serrurier", "image_mid", "w-1/2" %}
+	</div>
+
+	{% include "partials/services.html" %}
+
+	<article class="container page">
+		{{ content | safe}}
+	</article>
 {% endblock %}

@@ -16,6 +16,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply text-neutral-600;
+  }
+  h2 {
+    @apply py-10 text-5xl font-josefin font-bold;
+  }
+}
+
 @layer components {
   .btn-primary {
     @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md;
@@ -24,15 +33,19 @@
     }
   }
   .page {
-    h2 {
-      @apply pb-3 text-3xl font-josefin font-bold text-neutral-600;
-    }
     p {
-      @apply pb-4 text-lg font-medium leading-8 text-neutral-600;
+      @apply pb-4 text-lg font-medium leading-8;
+    }
+  }
+
+  .service {
+    h2 {
+      @apply py-4 text-3xl;
     }
     ul {
       @apply md:grid-cols-3 md:grid gap-4 font-josefin italic leading-8 font-medium mt-8;
     }
+
     li {
       position: relative;
       padding-left: 50px;

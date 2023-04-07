@@ -18,5 +18,16 @@ module.exports = {
         default: "1280px",
       },
     },
+    image_mid: {
+      formats: ["avif", "webp", "jpeg"],
+      widths: [500, 900],
+      medias: {
+        sizes: {
+          sm: "500px",
+          lg: "900px",
+        },
+        default: "1280px",
+      },
+    },
   },
 };

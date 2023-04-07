@@ -17,6 +17,7 @@ image3:
     - "urgence"
 icone: u
 nom:
+leadingBackground: "service-urgence-serrurerie.jpg"
 ---
 
 {% include "partials/3-images.html" %}

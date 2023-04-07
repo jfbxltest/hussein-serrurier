@@ -16,6 +16,7 @@ image3:
     - "changement de serrure"
 icone: c
 nom:
+leadingBackground: "service-changement-de-serrure.jpg"
 ---
 
 {% include "partials/3-images.html" %}

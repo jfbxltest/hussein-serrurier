@@ -16,6 +16,7 @@ image3:
     - "porte fermée"
 icone: o
 nom:
+leadingBackground: "service-ouverture-de-porte-fermee.jpg"
 ---
 
 {% include "partials/3-images.html" %}

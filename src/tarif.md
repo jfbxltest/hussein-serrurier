@@ -2,7 +2,8 @@
 eleventyNavigation:
   key: Tarif
   order: 3
-title: 'Tarif'
-layout: 'layouts/home.html'
+title: "Tarif"
+layout: "layouts/home.html"
 permalink: "/{{ title | slugify }}.html"
+leadingBackground: "services.jpg"
 ---

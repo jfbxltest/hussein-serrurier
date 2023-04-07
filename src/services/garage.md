@@ -16,6 +16,7 @@ image3:
     - "porte de garage"
 icone: g
 nom:
+leadingBackground: "service-porte-de-garage.jpg"
 ---
 
 {% include "partials/3-images.html" %}

@@ -16,6 +16,7 @@ image3:
     - "renforcement de porte"
 icone: r
 nom:
+leadingBackground: "service-renforcement-de-porte.jpg"
 ---
 
 {% include "partials/3-images.html" %}

@@ -19,6 +19,7 @@ image3:
 
 icone: b
 nom:
+leadingBackground: "service-porte-blindee.jpg"
 ---
 
 ::: intro

@@ -12,7 +12,12 @@ module.exports = {
       josefin: ['"Josefin Sans"', "sans-serif"],
       icones: ["icomoon"],
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#f97316",
+        secondary: "#475569",
+      },
+    },
   },
   variants: {
     display: ["group-hover"],

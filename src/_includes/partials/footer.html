@@ -1,1 +1,27 @@
-<button class="btn-primary">Primary</button>
+<div class="md:flex pt-20 px-8 text-white text-sm md:text-base relative" style="background-image: linear-gradient(90deg,#283d4b 0%,rgba(128,103,79,0.5) 100%)">
+	<div class="font-jost font-semibold space-y-8 md:mr-12">
+		<h3 class="md:text-4xl">Appelez un serrurier</h3>
+		<p class="text-xl md:text-4xl">{{ site.phone }}</p>
+		{% include "partials/cta-appeler.html" %}
+	</div>
+	<div class="mt-8 md:mt-0 flex space-x-6">
+		<div>
+			<h4 class="tracking-[.2em] opacity-50 font-black mb-6 uppercase">services</h4>
+			<P class="leading-7">
+				{% for service in collections.services %}
+					{{service.data.title}}<br>
+				{% endfor %}
+				<strong>Voir plus</strong>
+			</P>
+		</div>
+		<div>
+			<h4 class="tracking-[.2em] opacity-50 font-black mb-6 uppercase">communes</h4>
+			<P class="leading-7">
+				{% for commune in site.communes %}
+					{{commune}}<br>
+				{% endfor %}
+				<strong>Voir plus</strong>
+			</P>
+		</div>
+	</div>
+</div>
