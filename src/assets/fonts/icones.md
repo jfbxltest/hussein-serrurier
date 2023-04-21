@@ -15,3 +15,6 @@ y: icon check = Valid
 q: quote white
 Q: quote black
 
+m: menu
+p: phone
+e: email

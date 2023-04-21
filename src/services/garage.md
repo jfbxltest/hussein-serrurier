@@ -16,7 +16,10 @@ image3:
     - "porte de garage"
 icone: g
 nom:
-leadingBackground: "service-porte-de-garage.jpg"
+leading:
+  title: "Porte de garage"
+  subtitle: "Service de serrurerie sur-mesure"
+  background: "service-porte-de-garage.jpg"
 ---
 
 {% include "partials/3-images.html" %}

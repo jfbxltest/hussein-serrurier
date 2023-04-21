@@ -1,0 +1,100 @@
+{
+  "home": [
+    {
+      "nom": "Emma Fouxe",
+      "home": true,
+      "genre": "F",
+      "email": "",
+      "localité": "",
+      "commentaire": "C’est le SEUL serrurier de Bruxelles qui avait les serrures que je voulais. Ils ont répondu à toutes mes questions et sont restés en contact avec moi. J’avais deux demandes spéciales et ils ont tout fait pour les satisfaire. Je ne pourrais pas être plus heureux du résultat. Ils ont tout commandé et installé en temps voulu. J’ai été vraiment étonnée et HEUREUSE qu’ils aient nettoyé tout le chantier avant leur départ."
+    },
+    {
+      "nom": "Bob Muller",
+      "home": true,
+      "genre": "M",
+      "email": "",
+      "localité": "",
+      "commentaire": "serrurier-hussein.be a accompli la tâche de manière rapide et efficace. Leur prix était extrêmement compétitif et le service à la clientèle est inégalable. Je recommande vivement pour tous vos besoins en serrurerie !"
+    },
+    {
+      "nom": "Paola Fernández",
+      "home": true,
+      "genre": "F",
+      "email": "",
+      "localité": "",
+      "commentaire": "Très polis et très rapides. J’avais la possibilité de les faire venir tout de suite, mais comme j’étais au travail, ils ont fixé un rendez-vous plus tard pour m’accommoder. Ils étaient également moins chers que les deux autres entreprises que j’ai appelées"
+    }
+  ],
+  "page": [
+    {
+      "nom": "Michel M.",
+      "genre": "M",
+      "email": "",
+      "localité": "",
+      "commentaire": "’ai reçu un excellent service ! En plus de la qualité et de la rapidité du service, la volonté d’aider était remarquable. J’encourage tout le monde à soutenir cette excellente entreprise. Merci Vincent pour votre aide !"
+    },
+    {
+      "nom": "Sylvie C.",
+      "genre": "F",
+      "email": "",
+      "localité": "",
+      "commentaire": "Excellente expérience de service de rapidement serrurier !!! J’ai appelé le support et 60 minutes plus tard, un de leurs professionnels de la serrurerie est arrivé et a résolu mon problème en moins de 20 minutes ! Ils sont professionnels, règlent le problème et n’essaient pas de vous vendre d’autres services, un service de grande qualité et totalement abordable."
+    },
+    {
+      "nom": "Chris L.",
+      "genre": "M",
+      "email": "",
+      "localité": "",
+      "commentaire": "Le meilleur service qui soit ! Réponse, efficacité et professionnalisme imbattables. Je n’hésiterai pas à faire appel à eux à nouveau et je les recommanderai vivement à mes amis. Ont dépassé toutes les attentes."
+    },
+    {
+      "nom": "Harry O.",
+      "genre": "M",
+      "email": "",
+      "localité": "",
+      "commentaire": "Très professionnels et compétent. Je les recommande sans hésiter, il n’ont pas seulement réglé le problème, mais ont également pris le temps de répondre à toutes les questions que j’avais."
+    },
+    {
+      "nom": "Karina G.",
+      "genre": "F",
+      "email": "",
+      "localité": "",
+      "commentaire": "Une expérience très agréable. Je suis arrivée juste avant l’heure de fermeture et Leo était encore très serviable. Ces gars-là vont définitivement faire un effort supplémentaire. Hautement recommandé."
+    },
+    {
+      "nom": "Hakim F.",
+      "genre": "M",
+      "email": "",
+      "localité": "",
+      "commentaire": "Ces gars-là sont géniaux… Toujours enthousiastes à l’idée de se présenter quand une urgence survient… Non seulement ils m’ont sorti d’un ou deux pétrins avec ma maison… Mais aussi avec mon entreprise… Les prix sont raisonnables et ils donnent de bonnes recommandations… Ils sont rapides et fiables… "
+    },
+    {
+      "nom": "Weber P.",
+      "genre": "M",
+      "email": "",
+      "localité": "",
+      "commentaire": "Un service incroyable, super sympathique !!! Très rapide Je recommande vivement ces gars. Entrés et sortis en un rien de temps et les prix sont super justes !"
+    },
+    {
+      "nom": "Christine S.",
+      "genre": "F",
+      "email": "",
+      "localité": "",
+      "commentaire": "Un service exceptionnel !!! Nous sommes entrés rapidement et Serrurier Suisse a été très utile et gentil avec nos besoins/problèmes. Nous ferons de nouveau appel à eux et nous les recommandons vivement. Un grand bravo !"
+    },
+    {
+      "nom": "Franco T.",
+      "genre": "M",
+      "email": "",
+      "localité": "",
+      "commentaire": "Excellent service ! Professionnel et à l’heure. Respectueux de votre maison et des gens sympathiques et professionnels au téléphone et en personne. Merci !"
+    },
+    {
+      "nom": "Luc U.",
+      "genre": "M",
+      "email": "",
+      "localité": "",
+      "commentaire": "Service très gentil et rapide. Leur entreprise a ouvert tôt pour moi lorsque j’avais besoin de faire des clés avant d’aller au travail. Très efficace !"
+    }
+  ]
+}

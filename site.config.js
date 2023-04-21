@@ -1,8 +1,15 @@
 module.exports = {
+  main: {
+    name: "Serrurier Hussein",
+    phone: "+32 2 214 55 09",
+    email: "info@serrurier-hussein.be",
+    domain: "serrurier-hussein.be",
+    url: "",
+  },
   breakpoints: {
     sm: "640px",
     md: "768px",
-    lg: "1180px",
+    lg: "980px",
     xl: "1280px",
     "2xl": "1536px",
   },
@@ -28,6 +35,20 @@ module.exports = {
         },
         default: "1280px",
       },
+    },
+  },
+  classesCTA: {
+    call: {
+      text: "Appelez-nous",
+      href: "",
+    },
+    meeting: {
+      text: "Prendre un RDV",
+      href: "",
+    },
+    tarif: {
+      text: "Consuluter nos tarifs",
+      href: "",
     },
   },
 };

@@ -14,7 +14,7 @@ const stringifyAttributes = (attributeMap) => {
     .join(" ");
 };
 
-const imageShortcode = async (
+const shortCodeImage = async (
   src,
   alt,
   className = undefined,
@@ -81,4 +81,4 @@ const imageShortcode = async (
   return outdent`${picture}`;
 };
 
-module.exports = imageShortcode;
+module.exports = shortCodeImage;

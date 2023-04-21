@@ -1,27 +1,57 @@
-<div class="md:flex pt-20 px-8 text-white text-sm md:text-base relative" style="background-image: linear-gradient(90deg,#283d4b 0%,rgba(128,103,79,0.5) 100%)">
-	<div class="font-jost font-semibold space-y-8 md:mr-12">
-		<h3 class="md:text-4xl">Appelez un serrurier</h3>
-		<p class="text-xl md:text-4xl">{{ site.phone }}</p>
-		{% include "partials/cta-appeler.html" %}
+<div style="background-image: linear-gradient(90deg,#283d4b 0%,rgba(128,103,79,0.5) 100%)">
+	<div class="container md:flex justify-between pt-20 pb-40 text-white text-sm md:text-base">
+
+
+		<div class="font-jost font-semibold md:mr-8">
+			<h3 class="md:text-4xl">Appelez un serrurier</h3>
+			<p class="text-xl md:text-4xl py-8">{{ site.phone }}</p>
+			{% include "partials/cta-appeler.html" %}
+		</div>
+		<div class="mt-8 md:mt-0 flex space-x-6">
+			<div class="">
+				<h4 class="tracking-[.2em] opacity-50 font-black mb-6 uppercase">services</h4>
+				<P class="leading-7">
+					{% for service in collections.services %}
+						{{service.data.title}}<br>
+					{% endfor %}
+					<a href="/services.html">
+						<strong>Voir plus</strong>
+					</a>
+				</P>
+			</div>
+			<div>
+				<h4 class="tracking-[.2em] opacity-50 font-black mb-6 uppercase">communes</h4>
+				<ul class="md:grid md:grid-cols-2 grid-flow-row-dense gap-x-4 leading-7">
+					{% for commune in site.communes %}
+						<li>
+							{{commune}}
+						</li>
+					{% endfor %}
+				</ul>
+
+			</div>
+		</div>
 	</div>
-	<div class="mt-8 md:mt-0 flex space-x-6">
-		<div>
-			<h4 class="tracking-[.2em] opacity-50 font-black mb-6 uppercase">services</h4>
-			<P class="leading-7">
-				{% for service in collections.services %}
-					{{service.data.title}}<br>
-				{% endfor %}
-				<strong>Voir plus</strong>
-			</P>
+
+</div>
+
+<div style="background-image: linear-gradient(200deg,rgba(255,255,255,0) 0%,rgba(0,0,0,0.32) 100%),url(/assets/images/leading/{{leadingBackground}})">
+	<div class="container rounded-xl bg-primary p-12 text-white font-black md:flex justify-between -mb-4 -translate-y-20">
+		<div class="">
+			<p class="text-white font-black md:mb-4">Téléphone</p>
+			<p class="text-gray-300">{{ site.phone }}</p>
 		</div>
-		<div>
-			<h4 class="tracking-[.2em] opacity-50 font-black mb-6 uppercase">communes</h4>
-			<P class="leading-7">
-				{% for commune in site.communes %}
-					{{commune}}<br>
-				{% endfor %}
-				<strong>Voir plus</strong>
-			</P>
+		<div class="">
+			<p class="text-white font-black md:mb-4">Email</p>
+			<p class="text-gray-300">{{ site.email }}</p>
 		</div>
+		<div class="">
+			<p class="text-white font-black md:mb-4">Réseaux sociaux</p>
+		</div>
+	</div>
+	<div class="bg-primary max-w-lg mx-auto py-8 rounded-t-xl text-white">
+		<div class="text-center mb-8">Tous droits réservés © 2023
+			{{ site.name }}</div>
+		<a href="" class="block text-center">Politique de confidentialité</a>
 	</div>
 </div>

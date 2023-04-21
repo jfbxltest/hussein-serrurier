@@ -17,7 +17,11 @@ image3:
     - "urgence"
 icone: u
 nom:
-leadingBackground: "service-urgence-serrurerie.jpg"
+leading:
+  title: "Urgence serrurier"
+  subtitle: "Service de serrurerie sur-mesure"
+  background: "service-urgence-serrurerie.jpg"
+home: true
 ---
 
 {% include "partials/3-images.html" %}

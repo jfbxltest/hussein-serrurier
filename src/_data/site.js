@@ -1,10 +1,8 @@
-{
-  "name": "Serrurier Hussein",
-  "phone": "+32 2 214 55 09",
-  "email": "info@serrurier-hussein.be",
-  "domain": "serrurier-hussein.be",
-  "url": "",
-  "communes": [
+const main = require("../../site.config").main;
+
+module.exports = {
+  ...main,
+  communes: [
     "Anderlecht",
     "Auderghem",
     "Berchem-Sainte-Agathe",
@@ -23,6 +21,6 @@
     "Uccle",
     "Watermael-Boitsfort",
     "Woluwe-Saint-Lambert",
-    "Woluwe-Saint-Pierre"
-  ]
-}
+    "Woluwe-Saint-Pierre",
+  ],
+};

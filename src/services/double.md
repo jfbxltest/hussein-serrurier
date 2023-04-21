@@ -17,7 +17,10 @@ image3:
     - "double de clef"
 icone: d
 nom:
-leadingBackground: "service-double-de-cle.jpg"
+leading:
+  title: Double de clé
+  subtitle: Service de serrurerie sur-mesure
+  background: "service-double-de-cle.jpg"
 ---
 
 {% include "partials/3-images.html" %}

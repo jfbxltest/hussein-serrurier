@@ -17,14 +17,17 @@ image3:
     - "une clé cassée dans la porte"
 icone: k
 nom:
-leadingBackground: "service-cle-cassee-dans-porte.jpg"
+leading:
+  title: "Clé cassée dans une porte"
+  subtitle: "Service de serrurerie sur-mesure"
+  background: "service-cle-cassee-dans-porte.jpg"
 ---
 
 ::: intro
 
 ## Service d’extraction de clé cassée
 
-Casser une clé dans la serrure en essayant d’ouvrir une porte est une expérience stressante et frustrante. Cette situation peut survenir pour des raisons très diverses, notamment l’utilisation d’une serrure avec une clé endommagée ou tordue, une serrure mal lubrifiée ou des mécanismes défectueux ou en panne. {}
+Casser une clé dans la serrure en essayant d’ouvrir une porte est une expérience stressante et frustrante. Cette situation peut survenir pour des raisons très diverses, notamment l’utilisation d’une serrure avec une clé endommagée ou tordue, une serrure mal lubrifiée ou des mécanismes défectueux ou en panne.
 :::
 
 {% include "partials/3-images.html" %}

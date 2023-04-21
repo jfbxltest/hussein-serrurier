@@ -2,7 +2,8 @@ const breakpoints = require("./site.config").breakpoints;
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html, njk}"],
+  content: ["./src/**/*.{html, md}", "./dist/**/*.{html}"],
+  safelist: ["blue-section"],
   theme: {
     screens: breakpoints,
     fontFamily: {
@@ -17,6 +18,15 @@ module.exports = {
         primary: "#f97316",
         secondary: "#475569",
       },
+      keyframes: {
+        flowToLeft: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+      },
+      animation: {
+        "leading-flow": "flowToLeft 15s linear ",
+      },
     },
   },
   variants: {
@@ -30,9 +40,9 @@ module.exports = {
       addComponents({
         ".container": {
           margin: "0 auto",
-          maxWidth: "90%",
+          maxWidth: "80%",
           "@screen sm": {
-            maxWidth: "80%",
+            maxWidth: "90%",
           },
           "@screen xl": {
             maxWidth: "1080px",

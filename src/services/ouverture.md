@@ -16,7 +16,11 @@ image3:
     - "porte fermée"
 icone: o
 nom:
-leadingBackground: "service-ouverture-de-porte-fermee.jpg"
+leading:
+  title: "Ouverture de porte"
+  subtitle: "Service de serrurerie sur-mesure"
+  background: "service-ouverture-de-porte-fermee.jpg"
+home: true
 ---
 
 {% include "partials/3-images.html" %}

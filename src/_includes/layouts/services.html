@@ -1,5 +1,10 @@
 {% extends "layouts/base.html" %}
 {% block content %}
+
+	{% for service in collections.services %}
+		{% set test = service.data %}
+		{% include "partials/test.html" %}
+	{% endfor %}
 	<!-- begin service layout-->
 	<div class="page service mt-28">
 		{{ content | safe}}

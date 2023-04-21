@@ -1,0 +1,14 @@
+{
+  "call": {
+    "text": "Appelez-nous",
+    "href": ""
+  },
+  "meeting": {
+    "text": "Prendre un RDV",
+    "href": ""
+  },
+  "tarif": {
+    "text": "Consuluter nos tarifs",
+    "href": ""
+  }
+}

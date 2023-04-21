@@ -5,12 +5,15 @@ const classesImage = require("./11ty/classesImage.js")(
   siteConfig.classesImage,
   siteConfig.breakpoints
 );
-const imageShortCode = require("./11ty/image.js");
+const classesCTA = require("./11ty/classesCTA.js")(siteConfig.classesCTA);
+const shortCodeImage = require("./11ty/shortCodes/image.js");
+const shortCodeCTA = require("./11ty/shortCodes/cta.js");
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.setLibrary("md", markdownLib);
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
   eleventyConfig.addCollection("services", (collection) => {
     return collection.getFilteredByGlob("./src/services/*.md");
   });
@@ -20,9 +23,14 @@ module.exports = (eleventyConfig) => {
     function (src, alt, cls, css) {
       const { widths, formats, sizes } =
         classesImage.getWidthsFormatsAndSizes(cls);
-      return imageShortCode(src, alt, css, widths, formats, sizes);
+      return shortCodeImage(src, alt, css, widths, formats, sizes);
     }
   );
+
+  eleventyConfig.addNunjucksAsyncShortcode("cta", function (cta, css) {
+    const { text, href } = classesCTA.getctaData(cta);
+    return shortCodeCTA(text, href, css);
+  });
 
   eleventyConfig.addPassthroughCopy("./src/assets/images/leading/**/*");
   eleventyConfig.addPassthroughCopy("./src/assets/fonts/");

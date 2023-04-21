@@ -7,9 +7,9 @@ navigationElem.classList.toggle('hidden')
 }
 </script>
 <div class="md:hidden">
-	<button class="rounded text-white bg-slate-500  z-40 block mx-auto p-2 my-2" onclick="toggleNav()">Ok</button>
+	<button class="font-icones text-4xl rounded text-white bg-slate-500  z-40 block mx-auto px-1 my-2" onclick="toggleNav()">m</button>
 </div>
-<div class="relative md:sticky top-0 z-40  md:bg-white hidden md:block" id="navigation">
+<div class="relative md:sticky top-0 z-40  md:bg-white hidden md:block shadow-md" id="navigation">
 	<div class="absolute md:relative top-0 left-1/2 -translate-x-1/2 p-4 md:py-2.5 bg-gray-100  md:bg-transparent">
 		<ul class="md:flex justify-center text-[17px] font-semibold text-gray-600">
 			{%- for entry in navPages %}

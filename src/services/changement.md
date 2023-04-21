@@ -16,7 +16,11 @@ image3:
     - "changement de serrure"
 icone: c
 nom:
-leadingBackground: "service-changement-de-serrure.jpg"
+leading:
+  title: "Changement de serrure"
+  subtitle: "Service de serrurerie sur-mesure"
+  background: "service-changement-de-serrure.jpg"
+home: true
 ---
 
 {% include "partials/3-images.html" %}

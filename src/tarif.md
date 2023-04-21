@@ -3,7 +3,10 @@ eleventyNavigation:
   key: Tarif
   order: 3
 title: "Tarif"
-layout: "layouts/home.html"
+layout: "layouts/tarif.html"
 permalink: "/{{ title | slugify }}.html"
-leadingBackground: "services.jpg"
+leading:
+  title: Tarif
+  subtitle: Combien coûte une intervention d’un serrurier à Bruxelles ?
+  background: "services.jpg"
 ---

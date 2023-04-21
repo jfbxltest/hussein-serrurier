@@ -17,10 +17,11 @@
 		</ul>
 	</div>
 	<div class="md:flex mb-16">
-		<div class="p-32 space-y-4 w-1/2">
+		<div class="p-32 space-y-4 w-1/2 page">
 			<h3 class="text-3xl text-gray-500">RÉPARATION OU REMPLACEMENT</h3>
 			<h2 class="text-3xl">Les services de nos serruriers</h2>
 			<p>Installation, réparation, entretien et services d’urgence de déverrouillage de serrures à domicile efficaces et performants. Nous accordons une grande importance à la sécurité et à la sûreté de votre maison, et nous en faisons toujours notre priorité absolue.</p>
+			<a href="/services.html" alt="services serrurerie" class="reveal reveal-scale inline-block bg-secondary text-white p-4 font-extrabold uppercase">services serrurerie</a>
 		</div>
 		{% image "src/assets/images/mid-home.jpg",  "service serrurier", "image_mid", "w-1/2" %}
 	</div>
@@ -30,4 +31,34 @@
 	<article class="container page">
 		{{ content | safe}}
 	</article>
+
+	<div class="reveal reveal-scale text-center py-8">
+		<a href="/tarif.html" alt="tarif serrurerie" class=" inline-block bg-secondary text-white py-4 px-6 font-extrabold font-josefin tracking-widest uppercase shadow-xl ">Combien coûte un serrurier à Bruxelles ?</a>
+	</div>
+
+	<!-- Avis clients-->
+	<div class="bg-slate-300 pt-20 pb-40">
+		<div class="container md:grid grid-cols-2">
+			{% set origin = cycler("origin-top-right", "origin-top-left", "origin-top-left") %}
+			{% for avis in avis_client.home %}
+				<div class="{{origin.next()}} px-8 py-14 reveal reveal-scale bg-white text-center {% if loop.index == 2 %} mb-6 md:mb-0 md:translate-y-8 md:-translate-x-8 shadow-xl {% endif %} ">
+					<p class="mb-12 text-lg leading-8 font-medium">{{ avis.commentaire }}</p>
+					<p class="text-sm font-bold">{{ avis.nom }}</p>
+					<p class="text-sm">Client
+						{%- if avis.genre == "F" %}e
+						{% endif %}
+						{{ site.domain}}</p>
+				</div>
+				{% if loop.index == 1 %}
+					<div class="py-14 pl-10 pr-2.5">
+						<h4 class="uppercase text-gray-400 mb-4 font-josefin font-extrabold">AVIS CLIENTS
+							{{ site.domain }}</h4>
+						<p class="text-lg leading-8 font-medium">Notre mission est d’apporter la sécurité et la tranquillité d’esprit.</p>
+					</div>
+				{% endif %}
+			{% endfor %}
+
+		</div>
+	</div>
+
 {% endblock %}

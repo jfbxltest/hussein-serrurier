@@ -19,7 +19,10 @@ image3:
 
 icone: b
 nom:
-leadingBackground: "service-porte-blindee.jpg"
+leading:
+  title: Porte blindées
+  subtitle: "Service de serrurerie sur-mesure"
+  background: "service-porte-blindee.jpg"
 ---
 
 ::: intro
@@ -33,6 +36,8 @@ Les portes commerciales et résidentielles blindées de {{ site.name }} sont con
 ::: container
 Ces portes à panneaux multiples, de qualité industrielle, sont isolées à l’aide d’une couche renforcée conçue dans un souci d’élégance. Nous proposons des portes de sécurité commerciales et résidentielles blindées dans toute la Suisse, quelque soit le canton où vous vivez
 :::
+
+{% include "partials/cta-appeler.html" %}
 
 ::: container
 

@@ -4,11 +4,14 @@ eleventyNavigation:
   order: 0
 eleventyComputed:
   title: "{{ site.name | title }}"
+  leading:
+    title: "{{ site.name | title }} - Fiable et disponible"
+    subtitle: "Proche de chez vous en urgence ou sur rendez-vous"
+    background: "home.jpg"
 
 subtitle: "Proche de chez vous en urgence ou sur rendez-vous"
 layout: "layouts/home.html"
 permalink: "/index.html"
-leadingBackground: "home.jpg"
 ---
 
 ## Problèmes récurrents de serrurerie à Bruxelles
