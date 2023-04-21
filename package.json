@@ -9,7 +9,7 @@
     "dev:prettier-watch": "onchange 'dist/**/*.html' -- prettier --write --ignore-unknown {{changed}}",
     "dev:11ty": "eleventy --serve",
     "dev:css": "tailwindcss -i src/assets/css/tailwind.scss -o dist/assets/css/tailwind.css --watch --postcss",
-    "build:css": "tailwindcss -i src/assets/css/tailwind.scss -o src/_includes/css/critical.css --postcss --minify",
+    "build:css": "tailwindcss -i src/assets/css/tailwind.scss -o dist/assets/css/tailwind.css --postcss --minify",
     "build:11ty": "eleventy"
   },
   "author": "",
