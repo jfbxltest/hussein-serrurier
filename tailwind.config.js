@@ -20,8 +20,8 @@ module.exports = {
       },
       keyframes: {
         flowToLeft: {
-          "0%": { transform: "translateX(100%)" },
-          "100%": { transform: "translateX(0%)" },
+          "0%": { transform: "translate3d(50%,0,0)" },
+          "100%": { transform: "translate3d(0,0,0)" },
         },
       },
       animation: {
