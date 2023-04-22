@@ -33,6 +33,7 @@ module.exports = (eleventyConfig) => {
   });
 
   eleventyConfig.addPassthroughCopy("./src/assets/images/leading/**/*");
+  eleventyConfig.addPassthroughCopy("./src/assets/images/Serrurier-Logo.jpg");
   eleventyConfig.addPassthroughCopy("./src/assets/fonts/");
   eleventyConfig.addPassthroughCopy("./src/assets/css/reveal.css");
   eleventyConfig.addPassthroughCopy("./src/assets/js/");

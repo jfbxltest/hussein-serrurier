@@ -1,7 +1,7 @@
 module.exports = {
   main: {
     name: "Serrurier Hussein",
-    phone: "+32 2 214 55 09",
+    phone: "+32 490 58 63 60",
     email: "info@serrurier-hussein.be",
     domain: "serrurier-hussein.be",
     url: "",
@@ -16,7 +16,7 @@ module.exports = {
   classesImage: {
     image_3: {
       formats: ["avif", "webp", "jpeg"],
-      widths: [200, 400, 600],
+      widths: [400, 600],
       medias: {
         sizes: {
           sm: "480px",
