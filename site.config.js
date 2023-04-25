@@ -1,7 +1,7 @@
 module.exports = {
   main: {
     name: "Serrurier Hussein",
-    phone: "+32 490 58 63 60",
+    phone: "0490586360",
     email: "info@serrurier-hussein.be",
     domain: "serrurier-hussein.be",
     url: "",

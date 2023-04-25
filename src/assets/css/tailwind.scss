@@ -49,11 +49,17 @@
     h3 {
       @apply font-josefin text-2xl font-bold;
     }
-    ul {
+    ul{
       @apply md:grid-cols-3 md:grid gap-4 font-josefin text-lg italic leading-8 font-medium mt-8;
     }
+    ol {
+      @apply text-lg leading-8 font-medium my-8 list-disc pl-8;
+    }
+    .liste-decimale>ol {
+      @apply list-decimal
+    }
 
-    li {
+    ul>li {
       position: relative;
       padding-left: 50px;
       margin-bottom: 30px;
@@ -102,5 +108,8 @@
     secondary {
       @apply bg-secondary;
     }
+  }
+  .liste-numero>ol {
+
   }
 }

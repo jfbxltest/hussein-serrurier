@@ -32,6 +32,15 @@ module.exports = (eleventyConfig) => {
     return shortCodeCTA(text, href, css);
   });
 
+  eleventyConfig.addFilter("numberGsm", function (value) {
+    const parts = []
+    parts.push(value.substring(0, 4))
+    parts.push(value.substring(4, 6))
+    parts.push(value.substring(6, 8))
+    parts.push(value.substring(8, 10))
+    return parts.join(' ')
+  });
+
   eleventyConfig.addPassthroughCopy("./src/assets/images/leading/**/*");
   eleventyConfig.addPassthroughCopy("./src/assets/images/Serrurier-Logo.jpg");
   eleventyConfig.addPassthroughCopy("./src/assets/fonts/");
