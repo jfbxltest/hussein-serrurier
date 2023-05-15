@@ -42,7 +42,7 @@ Nous offrons une gamme complète de services de serrurerie d’urgence, commerci
 
 ## Services complets d’installation et de réparation
 
-Nous proposons une gamme dite complète de services de serrurerie en Suisse. Les clients résidentiels peuvent compter sur nous pour répondre à une demande d’assistance en 30 minutes ou moins. Dans une situation où vous êtes enfermés à l’extérieur de votre logement, la rapidité de la réponse s’avère importante. Nous comprenons que vous ne voulez pas attendre dehors pendant de longues périodes pour obtenir de l’aide afin d’ouvrir une porte d’entrée verrouillée.
+Nous proposons une gamme dite complète de services de serrurerie à Bruxelles. Les clients résidentiels peuvent compter sur nous pour répondre à une demande d’assistance en 30 minutes ou moins. Dans une situation où vous êtes enfermés à l’extérieur de votre logement, la rapidité de la réponse s’avère importante. Nous comprenons que vous ne voulez pas attendre dehors pendant de longues périodes pour obtenir de l’aide afin d’ouvrir une porte d’entrée verrouillée.
 
 **Les lockouts se produisent pour une variété de raisons. Il suffit de considérer quelques scénarios courants :**
 

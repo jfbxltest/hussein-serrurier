@@ -4,7 +4,7 @@ module.exports = {
     phone: "0490586360",
     email: "info@serrurier-hussein.be",
     domain: "serrurier-hussein.be",
-    url: "",
+    url: "https://hussein-test-demo.netlify.app",
   },
   breakpoints: {
     sm: "640px",

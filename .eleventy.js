@@ -15,7 +15,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   eleventyConfig.addCollection("services", (collection) => {
-    return collection.getFilteredByGlob("./src/services/*.md");
+    return collection.getFilteredByGlob("./src/pages/services/*.md");
   });
 
   eleventyConfig.addNunjucksAsyncShortcode(
@@ -33,16 +33,17 @@ module.exports = (eleventyConfig) => {
   });
 
   eleventyConfig.addFilter("numberGsm", function (value) {
-    const parts = []
-    parts.push(value.substring(0, 4))
-    parts.push(value.substring(4, 6))
-    parts.push(value.substring(6, 8))
-    parts.push(value.substring(8, 10))
-    return parts.join(' ')
+    const parts = [];
+    parts.push(value.substring(0, 4));
+    parts.push(value.substring(4, 6));
+    parts.push(value.substring(6, 8));
+    parts.push(value.substring(8, 10));
+    return parts.join(" ");
   });
 
   eleventyConfig.addPassthroughCopy("./src/assets/images/leading/**/*");
   eleventyConfig.addPassthroughCopy("./src/assets/images/Serrurier-Logo.jpg");
+  eleventyConfig.addPassthroughCopy("./src/assets/images/favicon.png");
   eleventyConfig.addPassthroughCopy("./src/assets/fonts/");
   eleventyConfig.addPassthroughCopy("./src/assets/css/reveal.css");
   eleventyConfig.addPassthroughCopy("./src/assets/js/");

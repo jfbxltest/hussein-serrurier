@@ -34,7 +34,7 @@ Les portes commerciales et résidentielles blindées de {{ site.name }} sont con
 
 {% include "partials/3-images.html" %}
 ::: container
-Ces portes à panneaux multiples, de qualité industrielle, sont isolées à l’aide d’une couche renforcée conçue dans un souci d’élégance. Nous proposons des portes de sécurité commerciales et résidentielles blindées dans toute la Suisse, quelque soit le canton où vous vivez
+Ces portes à panneaux multiples, de qualité industrielle, sont isolées à l’aide d’une couche renforcée conçue dans un souci d’élégance. Nous proposons des portes de sécurité commerciales et résidentielles blindées dans toute la région de Bruxelles.
 :::
 
 {% include "partials/cta-appeler.html" %}
@@ -44,7 +44,7 @@ Ces portes à panneaux multiples, de qualité industrielle, sont isolées à l�
 ## Les experts de la pose, réparation et remplacement de porte blindée à Bruxelles.
 
 ::: reveal reveal-right
-Nos portes de sécurité blindée sont parfaites pour tous les bâtiments – appartements, condominiums, hôtels, écoles, hôpitaux, institutions, commerces, places, installations de fabrication industrielle, et toute installation de Suisse qui nécessite une entrée ou une sortie sécurisée.
+Nos portes de sécurité blindée sont parfaites pour tous les bâtiments – appartements, hôtels, écoles, hôpitaux, institutions, commerces, places, installations de fabrication industrielle, et toute installation qui nécessite une entrée ou une sortie sécurisée.
 **Les spécifications générales de certains stocks comprennent :**
 :::
 ::: container reveal reveal-right
@@ -59,7 +59,7 @@ Nos portes de sécurité blindée sont parfaites pour tous les bâtiments – ap
   :::
   ::: container reveal reveal-right
   Les portes d’entrées et de sorties blindées de Bruxelles sont confrontées à une série de défis, allant de l’interaction humaine agressive aux catastrophes naturelles.
-  Pleinement conscient de ces défis, chez {{ site.name }}, nous proposons des options adaptées à toutes les situations à des tarifs compétitifs. Notre installation de portes commerciales blindées en Suisse est la meilleure solution en termes de durabilité et de coût et offre aux entreprises la sécurité qu’elles méritent.
+  Pleinement conscient de ces défis, chez {{ site.name }}, nous proposons des options adaptées à toutes les situations à des tarifs compétitifs. Notre installation de portes commerciales blindées à Bruxelles est la meilleure solution en termes de durabilité et de coût et offre aux entreprises la sécurité qu’elles méritent.
   :::
 
 ::: blue-section

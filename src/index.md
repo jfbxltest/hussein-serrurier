@@ -8,6 +8,11 @@ eleventyComputed:
     title: "{{ site.name | title }} - Fiable et disponible"
     subtitle: "Proche de chez vous en urgence ou sur rendez-vous"
     background: "home.jpg"
+    og:
+      type: "website"
+      title: "Votre Serrurier Local à Bruxelles - {{ site.name | title }}"
+      description: "Découvrez {{ site.name | title }}, votre expert local en serrurerie; installation, réparation et dépannage d'urgence dans tout Bruxelles"
+      image: "home.jpg"
 
 subtitle: "Proche de chez vous en urgence ou sur rendez-vous"
 layout: "layouts/home.html"
@@ -24,7 +29,7 @@ Sa clientèle se compose principalement de clients particuliers (appartements, m
 
 Si vous avez un problème avec votre serrure et que vous devez appeler un serrurier, vous pouvez vous demander quel sera le prix de votre intervention. Le prix d’une intervention dépend du temps de travail, du coût du matériel, des frais de transport, des taxes et de la distance du lieu d’intervention.
 
-C’est pourquoi nous proposons des devis gratuits pour toutes les interventions. Notre liste de prix fixes est une bonne première étape pour savoir quelle sera votre facture finale avant de passer commande. De plus, serrurier-suisse.ch offre la livraison gratuite de toutes les pièces commandées ainsi qu’un rabais sur les remplacements de portes et le service de remplacement de clés à Bruxelles.
+C’est pourquoi nous proposons des devis gratuits pour toutes les interventions. Notre liste de prix fixes est une bonne première étape pour savoir quelle sera votre facture finale avant de passer commande. De plus, {{ site.url }} offre la livraison gratuite de toutes les pièces commandées ainsi qu’un rabais sur les remplacements de portes et le service de remplacement de clés à Bruxelles.
 
 ## Tarifs {{site.domain}} en toute transparence
 

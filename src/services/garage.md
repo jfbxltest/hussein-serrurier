@@ -43,11 +43,11 @@ Nous sommes fiers de servir nos clients depuis de nombreuses années et nous nou
 
 ### Réparation de portes de garage
 
-Si votre porte de garage ou votre ouvre-porte de garage électronique fonctionne mal, vous avez besoin d’un spécialiste de la réparation de portes de garage en qui vous pouvez avoir confiance. Chez Serrurier Suisse, notre principale priorité est que votre porte fonctionne correctement et en toute sécurité pour vous et vos proches.
+Si votre porte de garage ou votre ouvre-porte de garage électronique fonctionne mal, vous avez besoin d’un spécialiste de la réparation de portes de garage en qui vous pouvez avoir confiance. Chez {{ site.name | title }}, notre principale priorité est que votre porte fonctionne correctement et en toute sécurité pour vous et vos proches.
 
 ### Installation de portes de garage
 
-Serrurier Suisse vendent et installent des portes de garage de la plus haute qualité dans tout le pays. Nous vendons toutes les marques et tous les modèles de portes de garage, notamment : Amarr, C.H.I, doorLink et MidAmerica. Nous proposons toutes les marques et tous les modèles d’ouvre-portes de garage, notamment Chamberlain, Genie et Lift Master.
+{{ site.name | title }} vendent et installent des portes de garage de la plus haute qualité dans tout le pays. Nous vendons toutes les marques et tous les modèles de portes de garage, notamment : Amarr, C.H.I, doorLink et MidAmerica. Nous proposons toutes les marques et tous les modèles d’ouvre-portes de garage, notamment Chamberlain, Genie et Lift Master.
 
 ### Ouvre-portes de garage
 
@@ -79,7 +79,7 @@ Chez {{ site.name | title }}, notre priorité n°1 est que votre porte fonctionn
 
 ### Vous ne savez pas quel est le problème avec porte porte de garage ?
 
-Votre porte de garage est bruyante ou ne fonctionne pas correctement ? Devez-vous appuyer plusieurs fois sur le bouton de la télécommande de votre ouvre-porte pour que la porte s’ouvre ou se ferme complètement ? Chez Serrurier Suisse, nous serions ravis de nous rendre chez vous pour résoudre votre problème, mais s’il s’agit simplement d’un réglage mineur, nous espérons pouvoir vous faire économiser l’argent d’un appel de service grâce à ces conseils utiles.
+Votre porte de garage est bruyante ou ne fonctionne pas correctement ? Devez-vous appuyer plusieurs fois sur le bouton de la télécommande de votre ouvre-porte pour que la porte s’ouvre ou se ferme complètement ? Chez {{ site.name | title }}, nous serions ravis de nous rendre chez vous pour résoudre votre problème, mais s’il s’agit simplement d’un réglage mineur, nous espérons pouvoir vous faire économiser l’argent d’un appel de service grâce à ces conseils utiles.
 
 ### Installation d’une nouvelle porte de garage
 

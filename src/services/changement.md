@@ -84,7 +84,7 @@ Les propriétaires devraient également **améliorer les serrures de leurs logem
 ::: blue-section
 ::: container liste-decimale
 
-## Ce qu’il faut savoir avant de changer vos serrures en Suisse
+## Ce qu’il faut savoir avant de changer vos serrures à Bruxelles
 
 **Donc, si vous êtes prêt à faire changer les serrures de votre maison, que devez-vous faire ?**
 
@@ -98,7 +98,7 @@ Les propriétaires devraient également **améliorer les serrures de leurs logem
 
 5. Nous nous mettons au travail. Une fois que vous avez choisi les serrures et autorisé les travaux, il est temps de passer aux choses sérieuses. Dans la plupart des cas, nous pouvons changer les serrures de porte en **quelques heures ou moins.**
 
-Lorsque vous avez besoin d’un remplacement de serrure, ou de tout autre service de serrurerie résidentielle, vous avez besoin d’une entreprise de serrurerie en qui vous pouvez avoir confiance. Où que vous soyez en Suisse, vous pouvez faire confiance à Serrurier Suisse.
+Lorsque vous avez besoin d’un remplacement de serrure, ou de tout autre service de serrurerie résidentielle, vous avez besoin d’une entreprise de serrurerie en qui vous pouvez avoir confiance. Où que vous soyez à Bruxelles, vous pouvez faire confiance à {{ site.name | title }}.
 
 **Appelez-nous dès aujourd’hui au {{ site.phone | numberGsm }} pour un service rapide, professionnel et abordable.**
 
